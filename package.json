@@ -1,0 +1,18 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "w": "browser-sync start --url http://127.0.0.1 --files=\"*.css\"",
+    "watch-dir": "browser-sync start --host 127.0.0.1 --port 80 --files= src ",
+    "watch": "browser-sync start --host 127.0.0.1 --port 80 --files=**/* ",
+    "watc": "browser-sync start --host 127.0.0.1 --port 80 --files=\"*\" \"src\"",
+    "apache": "httpd",
+    "start": "npm-run-all --parallel apache  watch"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}

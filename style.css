@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* disable browser extension pop up */
+#__bs_notify__{
+    display: none !important;
+}
+
+h1{
+    color: #f55855;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: #f55855;
+    padding: 0 20px;
+    box-shadow: 
+    0 2px 2px -1px rgb(107 107 107), 
+    0 9px 11px -5px rgb(160 160 160), 
+    0 2px 3px 0px rgb(191 191 191),
+     0 3px 5px 1px rgb(185 185 185);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_nav{
+    display: flex;
+}
+.main_nav a{
+    text-decoration: none;
+    font-family: Roboto;
+    color: rgb(233, 233, 233);
+    font-weight: 300;
+    padding: 8px 8px;
+}
+
+.main_nav a:hover{
+    font-weight: 500;
+    color: #fff;
+}
+.main_nav .active{
+    font-weight: 500;
+    color: rgb(46, 255, 46);
+}
+.h40{
+    display: block;
+    height: 40px;;
+    width: 100%;
+}
+
+.auth_menu{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.auth_menu img{
+    width: 100%;
+    border-radius: 100%;
+
+}
+.dropdown_panel{
+    transform: scale(0);
+    transition: all .2s ease;
+    position: absolute;
+    width: 135px;
+    background: #efefef;
+    right: -10px;
+    top: 30px;
+    box-shadow: 
+    0 2px 2px -1px rgb(107 107 107), 
+    0 9px 11px -5px rgb(160 160 160), 
+    0 2px 3px 0px rgb(191 191 191),
+    0 3px 5px 1px rgb(185 185 185);
+}
+.dropdown_panel ul{
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.dropdown_panel ul li{
+    cursor: pointer;
+    font-family: roboto;
+    line-height: 18px;
+}
+.dropdown_panel ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #424242;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.dropdown_panel ul li a:hover{
+    color: #f55855;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.dropdown_panel ul li i{
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.show_dropdown_panel{
+    transform: scale(1);
+}
+.hide_dropdown_panel{
+    transform: scale(0);
+}
+
+.hide_backdrop{ display: none; }
+.show_backdrop{ display: block !important; background: #b5b5b58f; }
+
+#backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+
+.bg_blur{ filter: blur(8px); }
+
+
+.sign_in_icon{
+    color: #ffffff;
+}
